@@ -1,0 +1,41 @@
+.basket{
+  min-height: 67vh;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    gap: 50px;
+    .table {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      table {
+        width: 100%;
+        border: 1px solid gainsboro;
+        th,
+        tr,
+        td {
+          text-align: center;
+          padding: 7px;
+          border: 1px solid gainsboro;
+          .fa-solid{
+            cursor: pointer;
+            color: #ffc515;
+          }
+          button {
+            cursor: pointer;
+            transition: all 700ms;
+            color: black;
+            border: none;
+            background-color: #ffc515;
+            padding: 8px 12px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+}

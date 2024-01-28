@@ -1,0 +1,64 @@
+.addPage {
+  width: 100%;
+  max-width: 100%;
+  margin: 60px auto;
+  font-family: sans-serif;
+  .forms {
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .field {
+        outline: none;
+        width: 250px;
+        height: 40px;
+        margin-top: 10px;
+        padding: 6px;
+      }
+      button {
+        cursor: pointer;
+        transition: all 700ms;
+        color: black;
+        border: none;
+        background-color: #ffc515;
+        width: 250px;
+        height: 40px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .adminPanel {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .table {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      table {
+        width: 100%;
+        border: 1px solid gainsboro;
+        th,
+        tr,
+        td {
+          text-align: center;
+          padding: 7px;
+          border: 1px solid gainsboro;
+          button {
+            cursor: pointer;
+            transition: all 700ms;
+            color: black;
+            border: none;
+            background-color: #ffc515;
+            padding: 8px 12px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

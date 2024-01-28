@@ -1,0 +1,53 @@
+.testimionals {
+  background: url("https://preview.colorlib.com/theme/pulse/img/review-bg.jpg.webp");
+  max-width: 100%;
+  width: 100%;
+  min-height: 70vh;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  .container {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .fa-ice-cream {
+          color: white;
+          font-size: 40px;
+        }
+        h1 {
+          color: white;
+          font-size: 40px;
+          margin: 10px 0;
+        }
+      }
+    }
+    .text{
+        text-align: center;
+        p{
+            color: white;
+            line-height: 25px;
+            margin: 20px 0;
+        }
+        h5{
+            text-align: center;
+            color: #ffc515;
+        }
+    }
+  }
+}

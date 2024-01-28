@@ -1,0 +1,221 @@
+.navbar.black {
+  background-color: rgb(0, 0, 0);
+  position: static;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: transparent;
+  max-width: 100%;
+  width: 100%;
+  min-height: 10vh;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  .logo {
+    h2 {
+      font-size: 30px;
+      span {
+        color: #ffc515;
+      }
+    }
+    a {
+      color: white;
+    }
+  }
+  .menu {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      li {
+        a {
+          color: white;
+          font-size: 15px;
+        }
+        .active {
+          color: #ffc515;
+        }
+      }
+    }
+  }
+  .reserv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    h5 {
+      color: #ffc515;
+    }
+    .fa-phone {
+      color: white;
+    }
+    p {
+      color: white;
+      font-size: 13px;
+    }
+  }
+}
+
+.resNavbar {
+  display: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .resNavbar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: white;
+    max-width: 100%;
+    width: 100%;
+    min-height: 10vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gainsboro;
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      .logo {
+        h2 {
+          font-size: 30px;
+          span {
+            color: #ffc515;
+          }
+        }
+        a {
+          color: rgb(0, 0, 0);
+        }
+      }
+      .bars {
+        .fa-bars {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    .resMenu {
+      position: absolute;
+      top: 72px;
+      left: 0;
+      transition: all 700ms linear;
+      overflow: hidden;
+      height: 0;
+      opacity: 0;
+      background-color: white;
+      padding: 20px;
+      width: 100%;
+      border-bottom: 1px solid gainsboro;
+      ul {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          a {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+          }
+          .active {
+            color: #ffc515;
+          }
+        }
+      }
+    }
+    .open {
+      height: 170px;
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+  .resNavbar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: white;
+    max-width: 100%;
+    width: 100%;
+    min-height: 10vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gainsboro;
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      .logo {
+        h2 {
+          font-size: 30px;
+          span {
+            color: #ffc515;
+          }
+        }
+        a {
+          color: rgb(0, 0, 0);
+        }
+      }
+      .bars {
+        .fa-bars {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    .resMenu {
+      position: absolute;
+      top: 72px;
+      left: 0;
+      transition: all 700ms linear;
+      overflow: hidden;
+      height: 0;
+      opacity: 0;
+      background-color: white;
+      padding: 20px;
+      width: 100%;
+      border-bottom: 1px solid gainsboro;
+      ul {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          a {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+          }
+          .active {
+            color: #ffc515;
+          }
+        }
+      }
+    }
+    .open {
+      height: 170px;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+.ourMenu {
+  max-width: 100%;
+  width: 100%;
+  min-height: 120vh;
+  background: url("https://preview.colorlib.com/theme/pulse/img/menu-bg.jpg.webp");
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  background-size: cover;
+  .container {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .fa-utensils {
+          color: white;
+          font-size: 40px;
+        }
+        h1 {
+          color: white;
+          font-size: 40px;
+          margin: 10px 0;
+        }
+      }
+      .search {
+        width: 300px;
+        border-bottom: 2px solid #ffffff;
+        input {
+          width: 300px;
+          height: 40px;
+          outline: none;
+          border: none;
+          color: white;
+          padding: 20px;
+          background-color: transparent;
+        }
+      }
+      .filter {
+        margin: 20px 0;
+        button {
+          cursor: pointer;
+          transition: all 700ms;
+          border: none;
+          padding: 8px 12px;
+          margin-right: 15px;
+          background-color: #ffc515;
+          color: black;
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      .card {
+        margin-top: 20px;
+        margin-right: 50px;
+        max-width: 500px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 35px;
+        background-color: rgba($color: #555555, $alpha: 0.5);
+        .left {
+          .info {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 20px;
+            .fa-heart {
+              cursor: pointer;
+              color: #ffc515;
+              font-size: 19px;
+            }
+            .fa-cart-shopping {
+              cursor: pointer;
+              color: #ffc515;
+              font-size: 18px;
+            }
+            .fa-eye {
+              cursor: pointer;
+              font-size: 18px;
+            }
+            a {
+              color: #ffc515;
+            }
+          }
+        }
+        h3 {
+          color: white;
+        }
+        p {
+          color: gray;
+        }
+      }
+    }
+    .see {
+      cursor: pointer;
+      transition: all 700ms;
+      color: black;
+      border: none;
+      background-color: #ffc515;
+      width: 200px;
+      height: 40px;
+      margin-top: 60px;
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .ourMenu {
+    min-height: auto;
+    max-width: 100%;
+    .container {
+      .head {
+        .search {
+          width: 270px;
+          input{
+            width: 270px;
+          }
+        }
+        .filter {
+          margin: 30px 0;
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 20px;
+        }
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: auto;
+        .card {
+          margin-top: 0px;
+          margin-right: 0px;
+          width: 280px;
+          height: auto;
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .ourMenu {
+    min-height: auto;
+    .container {
+      .head {
+        .filter {
+          margin: 20px 0;
+        }
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: auto;
+        .card {
+          margin-right: 0px;
+          width: 100%;
+          height: auto;
+          padding: 7px;
+        }
+      }
+    }
+  }
+}
